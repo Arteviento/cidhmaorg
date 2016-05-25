@@ -34,13 +34,20 @@ gulp.task('build:css', function() {
 		.pipe(connect.reload());
 });
 
+gulp.task('build:assets', function() {
+	gulp.src('./src/assets/**/*.*')
+		.pipe(gulp.dest(buildPath+'/assets'))
+		.pipe(connect.reload());
+});
 
 gulp.task('watch', function(){
 	gulp.watch('./src/**/*.html', ['build:html']);
 	gulp.watch('./src/**/*.styl', ['build:css']);
 	gulp.watch('./src/**/*.js', ['build:js']);
+	gulp.watch('./src/assets/**/*.*', ['build:assets']);
+
 });
 
-gulp.task('build', ['build:css', 'build:html', 'build:js']);
+gulp.task('build', ['build:css', 'build:html', 'build:js', 'build:assets']);
 
 gulp.task('default', ['server', 'build', 'watch']);
