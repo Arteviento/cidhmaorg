@@ -28,11 +28,22 @@ body
 	justify-content: center
 	align-content: center
 	transition all .8s linear
+	overflow:hidden
 	&--none
 		opacity: 0
 		visibility: hidden
 .logo
 	width: $ancho_logo
+	animation-name: logo
+	animation-duration: 3s
+	animation-timing-function: bezier(.2,.82,.48,1.06)
+	
+@keyframes logo
+	0% 
+		
+		transform: scale(1.05, 1.05)
+	100%
+		transform none
 
 //PAGINA ESTABLE
 .content

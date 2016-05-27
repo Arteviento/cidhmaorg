@@ -22,7 +22,7 @@ setTimeout(function() {
 		case 3: setStyle('ffffff', '55adb7', 'ffffff','ffffff','ffffff', '154b65', '154b65', '154b65', '87949d', '154b65', '154b65', 'ffffff', '154b65', '154b65'); break;
 	}
 
-}, 1000);
+}, 1500);
 
 
 function getRandom() {
