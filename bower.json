@@ -1,0 +1,20 @@
+{
+  "name": "cidhmaorg",
+  "description": "CIDHMA.org",
+  "main": "index.js",
+  "authors": [
+    "arteviento@arteviento.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Arteviento/cidhmaorg",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
