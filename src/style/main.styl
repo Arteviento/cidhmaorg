@@ -51,11 +51,15 @@ body
 	height: 100vh
 	display flex
 	flex-direction: column
+	overflow hidden
+	@media screen and (orientation:landscape)
+		flex-direction row
 .box
 	position: relative
 	text-align: center
 	padding: 5%
 	text-decoration: none
+	transition transform .6s ease
 	&_ingenieria
 		flex-grow 1
 	&_capacitaciones
@@ -75,3 +79,7 @@ body
 		left 20%
 		font-family "Run"
 		letter-spacing 0.1em
+		
+	&:hover
+		transform: scale(1.02, 1.02)
+		z-index 10
