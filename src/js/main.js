@@ -7,13 +7,11 @@ $('img.box__logo').svgInject();
 //esperara 1 segundo para hacer la comprobacion si ha cargado la pagina
 setTimeout(function() {
 	
-	if(document.readyState === 'complete') {
+	if(document.readyState === 'complete')
 		landing.classList.add("landing--none")
-	}
-	else{
-		window.onload = function() {
-			landing.classList.add("landing--none");
-		}
+	
+	window.onload = function() {
+		landing.classList.add("landing--none");
 	}
 
 	switch(estilo) {
