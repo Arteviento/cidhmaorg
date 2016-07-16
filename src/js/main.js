@@ -16,7 +16,7 @@ setTimeout(function() {
 
 	switch(estilo) {
 		case 1: setStyle('ffffff', '1e130f', 'ffffff','ffffff','ffffff', '9c9a9f', 'd8dade', '1e130f', 'ffffff', '1e130f', '1e130f', '5c5b5f', '9c9a9f', 'd8dade'); break;
-		case 2: setStyle('ffffff', '154b65', 'ffffff','ffffff','ffffff', '55adb7', '55adb7', 'd8dade', 'a2bb42', 'd8dade', 'd8dade', 'ffffff', '9c9a9f', 'd8dade'); break;
+		case 2: setStyle('ffffff', '154b65', 'ffffff','ffffff','ffffff', '55adb7', '55adb7', 'ffffff', 'a2bb42', 'ffffff', 'ffffff', 'ffffff', '9c9a9f', 'd8dade'); break;
 		case 3: setStyle('ffffff', '55adb7', 'ffffff','ffffff','ffffff', '154b65', '154b65', '154b65', '87949d', '154b65', '154b65', 'ffffff', '154b65', '154b65'); break;
 	}
 
