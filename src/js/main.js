@@ -6,10 +6,10 @@ var estilo = getRandom();
 $('img.box__logo').svgInject();
 //esperara 1 segundo para hacer la comprobacion si ha cargado la pagina
 setTimeout(function() {
-	
+
 	if(document.readyState === 'complete')
 		landing.classList.add("landing--none")
-	
+
 	window.onload = function() {
 		landing.classList.add("landing--none");
 	}
@@ -44,4 +44,13 @@ function setStyle (ing, ingbgc, ingtext1, ingtext2, ingcolor1, ingcolor2, ingcol
 	$('.box__logo_capacitaciones .logo__color2').css('fill', '#'+capcolor2);
 	$('.box__logo_capacitaciones .logo__color3').css('fill', '#'+capcolor3);
 }
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)
+},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82082923-2', 'auto');
+  ga('send', 'pageview');
 
